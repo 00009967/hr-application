@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Log In 
+    link(rel="stylesheet", href="/static/styles/login.css")
+  body
+    .login-box 
+      h1 Sign Up
+      .textbox 
+        i.fas.fa-at
+        input(type="email" placeholder="Email" require=true)
+      .textbox
+        i.fas.fa-user
+        input(type="text" placeholder="Username" require=true)
+      .textbox
+        i.fas.fa-lock 
+        input(type="text" placeholder="Password" require=true)
+      .textbox 
+        i.fas.fa-lock 
+        input(type="text" placeholder="Repeat Passwrod" require=true)
+
+
+      input(type="button" value="Sign Up").btn
+
+      p.info If you already have account, 
+        a(href="/login") Login 
+
+      a(href="/home").back Back
