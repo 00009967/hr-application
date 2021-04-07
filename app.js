@@ -23,6 +23,17 @@ app.get('/signup', (req, res) => {
     res.render('signup')
 })
 
+// making basic REST API 
+app.get('/api/v1/hrDB.json', (req, res) => {
+    fs.readFile('./data/hrDB.json', (err, data) => {
+        if(err) throw err
+
+        const people = JSON.parse(data)
+
+        res.json(people)
+    })
+})
+
 // All employee page
 app.get('/allemployees', (req, res) => {
     
