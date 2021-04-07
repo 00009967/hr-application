@@ -1,6 +1,13 @@
 include headerEmpl.pug 
 .container
-  h1 List of employees in #{ name } 
+  h1 List of employees in #{ company-name } 
 
-  p.all-employee There is nothing to show!
+  each person in people 
+    .person-wrapper 
+      a.person(href=`/allemployees/${person.id}`) #{`${person.name} ${person.surname}`} 
+      a.delete(href="#") Delete   
+       
+
+
+
   

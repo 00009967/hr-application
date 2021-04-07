@@ -1,5 +1,21 @@
+include headerEmpl.pug 
 
-
-    
-
+.container-detail
+  h1.full-name #{ `${person.name} ${person.surname} `  }
+  table.table 
+    tr
+      th Name: 
+      td #{ person.name }
+    tr 
+      th Surname: 
+      td #{ person.surname }
+    tr
+      th Date of Birth: 
+      td #{ person.dob }
+    tr 
+      th Degree: 
+      td #{ person.education }
+    tr 
+      th Position 
+      td #{ person.position }
 

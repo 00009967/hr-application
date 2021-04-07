@@ -1,21 +1,25 @@
 include headerEmpl.pug  
 .container 
   h1 Create new employee 
-  
-  form(action="/newempl", method="post")
+    if error 
+      p.error Something went wrong! Try again!
+    if success 
+      p.success New employee is saved!
+
+  form(action="/newemployee", method="post")
     label(for="name").name Name:
     br
-    input.form-control(type="text", placeholder='Ex. Abdulla', name)
+    input.form-control(type="text", placeholder='Ex. Abdulla' name='name')
     br
 
     label(for="surname").surname Surname: 
     br 
-    input.form-control(type="text", placeholder="Ex. Hakimov")
+    input.form-control(type="text" placeholder="Ex. Hakimov" name='surname')
     br
 
     label(for="dob").dob Date of Birth: 
     br
-    input.form-control(type="date")
+    input.form-control(type="date" name='dob')
     br
 
     label(for="education").education Education (Highest Degree):
@@ -30,7 +34,7 @@ include headerEmpl.pug
     br
     label(for="position") Position
     br
-    input.form-control(type="text", placeholder="Ex. Accountant")
+    input.form-control(type="text" placeholder="Ex. Accountant" name='position')
     br
     button#add-btn.form-control(type='submit') Submit
       
