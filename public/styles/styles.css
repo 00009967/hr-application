@@ -16,6 +16,7 @@
 header h1 a {
     color: #0A61F7;
 } 
+
 a {
     text-decoration: none;
     color: inherit;
@@ -23,7 +24,11 @@ a {
 
 nav.menu a:hover {
     color: #0A61F7;
+}
 
+.employee a {
+    padding: 15px;
+    margin: 15px;
 }
 
 .navbar {

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+:root {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  background: #F3F8FF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header h1 a {
+  color: #0a61f7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header.navbar .employee a:hover {
+  color: #0a61f7;
+}
+
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: solid;
+  padding: 10px;
+  font-family: Roboto;
+}
+
+.container {
+  width: inherit;
+  position: absolute;
+  height: 768px;
+  left: 0;
+  right: 0;
+  top: 75px;
+  align-items: baseline;
+  text-align: left;
+}
+
+.container h1 {
+  width: inherit;
+  padding-left: 2.7%;
+}
+
+form {
+  padding: 2.7%; 
+  display: inline-block;
+}
+form label, input, select, button{
+  margin: 15px;
+  padding: 5px;
+}
+
+.form-control {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+#add-btn {
+  border-radius: 5px;
+  background: #0a61f7;
+  color: white;
+  font-family: inherit;
+  font-size: 1.25rem;
+}
+
+#add-btn:hover {
+  cursor: pointer;
+}
+
+p.all-employee {
+  padding: 2.7%;
+}

@@ -1,0 +1,37 @@
+include headerEmpl.pug  
+.container 
+  h1 Create new employee 
+  
+  form(action="/newempl", method="post")
+    label(for="name").name Name:
+    br
+    input.form-control(type="text", placeholder='Ex. Abdulla', name)
+    br
+
+    label(for="surname").surname Surname: 
+    br 
+    input.form-control(type="text", placeholder="Ex. Hakimov")
+    br
+
+    label(for="dob").dob Date of Birth: 
+    br
+    input.form-control(type="date")
+    br
+
+    label(for="education").education Education (Highest Degree):
+    br
+    select.form-control(name="education")
+      option(value="") Select Education level  
+      option(value="NoEducation") No Education 
+      option(value="Associate") Associate Degree
+      option(value="Bachelor") Bachelor's Degree
+      option(value="Master") Master's Degree
+      option(value="Doctoral") Doctoral Degree
+    br
+    label(for="position") Position
+    br
+    input.form-control(type="text", placeholder="Ex. Accountant")
+    br
+    button#add-btn.form-control(type='submit') Submit
+      
+

@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+const fs = require('fs');
+
 app.set('view engine', 'pug')
 
 app.use('/static', express.static('public'))
@@ -18,6 +20,16 @@ app.get('/login', (req, res) => {
 // Sign Up Page
 app.get('/signup', (req, res) => {
     res.render('signup')
+});
+
+// All employee page
+app.get('/allemployees', (req, res) => {
+    res.render('allempl')
+});
+
+// New employee page
+app.get('/newemployee', (req, res) => {
+    res.render('newempl')
 });
 
 app.listen(8000, err => {
