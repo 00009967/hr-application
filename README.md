@@ -28,7 +28,7 @@ node app
 
 ### Web application repository on GitHub
 
-``` google
-https://github.com/00009967/hr-application.git
-```
+[link to github repository](https://github.com/00009967/hr-application.git)
+
+
 
